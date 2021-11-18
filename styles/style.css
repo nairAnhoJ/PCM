@@ -1,0 +1,287 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Quicksand;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+}
+
+body #nav-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 80px;
+  z-index: 1;
+  overflow: hidden;
+  background-color: #3B44B0;
+  -webkit-transition: width 0.5s;
+  transition: width 0.5s;
+}
+
+body #nav-container:hover, body #nav-container:focus, body #nav-container:active {
+  width: 250px;
+}
+
+body #nav-container:hover .menu-container li a, body #nav-container:focus .menu-container li a, body #nav-container:active .menu-container li a {
+  width: 230px;
+}
+
+body #nav-container:hover .logout-container a, body #nav-container:focus .logout-container a, body #nav-container:active .logout-container a {
+  width: 230px;
+}
+
+body #nav-container .logo-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 80px;
+  width: 80px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+body #nav-container .logo-container .logo-pic {
+  height: 50px;
+  width: 50px;
+  line-height: 50px;
+  margin-left: 15px;
+}
+
+body #nav-container .logo-container .logo-pic img {
+  width: 50px;
+  height: 50px;
+}
+
+body #nav-container .logo-container .prof-details {
+  white-space: nowrap;
+  color: #fff;
+  opacity: 100;
+  z-index: 2;
+  margin-left: 16px;
+}
+
+body #nav-container .logo-container .prof-details span {
+  font-size: 15px;
+}
+
+body #nav-container .logo-container .prof-details .dept {
+  font-size: 13px;
+}
+
+body #nav-container .menu-container {
+  height: 50%;
+  width: 110px;
+  margin-top: 80px;
+}
+
+body #nav-container .menu-container .active a {
+  background-color: #fff;
+}
+
+body #nav-container .menu-container .active a .menu-name {
+  color: #3B44B0;
+}
+
+body #nav-container .menu-container li {
+  position: relative;
+  list-style: none;
+  width: 110px;
+  height: 60px;
+  margin-bottom: 5px;
+}
+
+body #nav-container .menu-container li a {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 60px auto;
+      grid-template-columns: 60px auto;
+  height: 60px;
+  width: 60px;
+  text-decoration: none;
+  margin-left: 10px;
+  border-radius: 17px;
+  -webkit-transition: width 0.5s;
+  transition: width 0.5s;
+}
+
+body #nav-container .menu-container li a:hover {
+  background-color: #fff;
+}
+
+body #nav-container .menu-container li a:hover .menu-name {
+  color: #3B44B0;
+}
+
+body #nav-container .menu-container li a img {
+  margin: 5px;
+  height: 50px;
+  width: 50px;
+}
+
+body #nav-container .menu-container li a .menu-name {
+  color: #fff;
+  font-size: 20px;
+  line-height: 60px;
+  margin-left: 30px;
+  white-space: nowrap;
+}
+
+body #nav-container .logout-container {
+  position: absolute;
+  bottom: 15px;
+  height: 60px;
+  width: 110px;
+}
+
+body #nav-container .logout-container a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 60px;
+  width: 40px;
+  margin-left: 10px;
+  border-radius: 17px;
+  -webkit-transition: width 0.5s;
+  transition: width 0.5s;
+  text-decoration: none;
+}
+
+body #nav-container .logout-container a:hover {
+  width: 230px;
+  background-color: #fff;
+}
+
+body #nav-container .logout-container a:hover #log-out {
+  color: #3B44B0;
+}
+
+body #nav-container .logout-container a:hover .logo1 {
+  opacity: 0;
+}
+
+body #nav-container .logout-container a #iflogin {
+  opacity: 0;
+}
+
+body #nav-container .logout-container a #iflogin .logo1 {
+  position: absolute;
+  margin-top: 7.5px;
+  margin-left: 5px;
+  height: 45px;
+  width: 45px;
+  z-index: 99;
+}
+
+body #nav-container .logout-container a #iflogin .logo2 {
+  margin-top: 7.5px;
+  margin-left: 5px;
+  height: 45px;
+  width: 45px;
+}
+
+body #nav-container .logout-container a #iflogout {
+  position: absolute;
+  opacity: 100;
+}
+
+body #nav-container .logout-container a #iflogout .out-logo {
+  margin-top: 7.5px;
+  margin-left: 5px;
+  height: 45px;
+  width: 45px;
+  z-index: 99;
+}
+
+body #nav-container .logout-container a #log-out {
+  color: #fff;
+  font-size: 20px;
+  line-height: 60px;
+  margin-left: 30px;
+  white-space: nowrap;
+}
+
+body {
+  z-index: -1;
+}
+
+body .tbl-container {
+  height: 100%;
+  width: 94.27%;
+  position: absolute;
+  right: 0;
+}
+
+body .tbl-container h1 {
+  text-align: center;
+  padding: 1.5%;
+  font-size: 5vh;
+}
+
+body .tbl-container .tbl {
+  margin: 0 2%;
+  min-width: 96%;
+  max-height: 87%;
+  border-collapse: collapse;
+}
+
+body .tbl-container .tbl thead {
+  border-radius: 20px 20px 0 0;
+}
+
+body .tbl-container .tbl thead tr {
+  height: 100%;
+  width: 100%;
+  background-color: #4f5ccf;
+}
+
+body .tbl-container .tbl thead tr th {
+  color: #fff;
+  padding: 1vh 0;
+  font-size: 2.5vh;
+  font-weight: 700;
+}
+
+body .tbl-container .tbl thead tr .th1 {
+  width: 15%;
+}
+
+body .tbl-container .tbl thead tr .th2 {
+  width: 15%;
+}
+
+body .tbl-container .tbl thead tr .th3 {
+  width: 25%;
+}
+
+body .tbl-container .tbl thead tr .th4 {
+  width: 15%;
+}
+
+body .tbl-container .tbl thead tr .th5 {
+  width: 10%;
+}
+
+body .tbl-container .tbl thead tr .th6 {
+  width: 10%;
+}
+
+body .tbl-container .tbl thead tr .th7 {
+  width: 10%;
+}
+
+body .tbl-container .tbl tbody tr:nth-child(even) {
+  background-color: #f3f3f3;
+}
+
+body .tbl-container .tbl tbody tr td {
+  text-align: center;
+  padding: 1% 0;
+  border-bottom: 1px solid #dddddd;
+}
+/*# sourceMappingURL=style.css.map */

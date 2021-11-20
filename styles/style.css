@@ -1,7 +1,7 @@
 * {
   padding: 0;
   margin: 0;
-  font-family: Quicksand;
+  font-family: 'Roboto Mono', monospace;
 }
 
 body {
@@ -22,15 +22,15 @@ body #nav-container {
   transition: width 0.5s;
 }
 
-body #nav-container:hover, body #nav-container:focus, body #nav-container:active {
+body #nav-container:hover {
   width: 250px;
 }
 
-body #nav-container:hover .menu-container li a, body #nav-container:focus .menu-container li a, body #nav-container:active .menu-container li a {
+body #nav-container:hover .menu-container li a {
   width: 230px;
 }
 
-body #nav-container:hover .logout-container a, body #nav-container:focus .logout-container a, body #nav-container:active .logout-container a {
+body #nav-container:hover .logout-container a {
   width: 230px;
 }
 
@@ -206,82 +206,395 @@ body #nav-container .logout-container a #log-out {
   white-space: nowrap;
 }
 
-body {
+#b-dash {
   z-index: -1;
 }
 
-body .tbl-container {
+#b-dash .tbl-container {
   height: 100%;
   width: 94.27%;
   position: absolute;
   right: 0;
 }
 
-body .tbl-container h1 {
+#b-dash .tbl-container h1 {
   text-align: center;
   padding: 1.5%;
   font-size: 5vh;
 }
 
-body .tbl-container .tbl {
+#b-dash .tbl-container .tbl {
   margin: 0 2%;
   min-width: 96%;
   max-height: 87%;
   border-collapse: collapse;
 }
 
-body .tbl-container .tbl thead {
+#b-dash .tbl-container .tbl thead {
   border-radius: 20px 20px 0 0;
 }
 
-body .tbl-container .tbl thead tr {
+#b-dash .tbl-container .tbl thead tr {
   height: 100%;
   width: 100%;
   background-color: #4f5ccf;
 }
 
-body .tbl-container .tbl thead tr th {
+#b-dash .tbl-container .tbl thead tr th {
   color: #fff;
   padding: 1vh 0;
   font-size: 2.5vh;
   font-weight: 700;
 }
 
-body .tbl-container .tbl thead tr .th1 {
+#b-dash .tbl-container .tbl thead tr .th1 {
   width: 15%;
 }
 
-body .tbl-container .tbl thead tr .th2 {
+#b-dash .tbl-container .tbl thead tr .th2 {
   width: 15%;
 }
 
-body .tbl-container .tbl thead tr .th3 {
+#b-dash .tbl-container .tbl thead tr .th3 {
   width: 25%;
 }
 
-body .tbl-container .tbl thead tr .th4 {
+#b-dash .tbl-container .tbl thead tr .th4 {
   width: 15%;
 }
 
-body .tbl-container .tbl thead tr .th5 {
+#b-dash .tbl-container .tbl thead tr .th5 {
   width: 10%;
 }
 
-body .tbl-container .tbl thead tr .th6 {
+#b-dash .tbl-container .tbl thead tr .th6 {
   width: 10%;
 }
 
-body .tbl-container .tbl thead tr .th7 {
+#b-dash .tbl-container .tbl thead tr .th7 {
   width: 10%;
 }
 
-body .tbl-container .tbl tbody tr:nth-child(even) {
+#b-dash .tbl-container .tbl tbody tr:nth-child(even) {
   background-color: #f3f3f3;
 }
 
-body .tbl-container .tbl tbody tr td {
+#b-dash .tbl-container .tbl tbody tr td {
   text-align: center;
   padding: 1% 0;
   border-bottom: 1px solid #dddddd;
+}
+
+#b-printer {
+  padding: 0;
+  margin: 0;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+#b-printer .printer-container {
+  height: 100vh;
+  width: 92.8vw;
+  position: absolute;
+  right: 0px;
+}
+
+#b-printer .printer-container h1 {
+  text-align: center;
+  padding: 1.5%;
+  font-size: 5vh;
+  width: 90vw;
+}
+
+#b-printer .printer-container .grid-container {
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  height: auto;
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
+  -ms-grid-rows: 10vh auto;
+      grid-template-rows: 10vh auto;
+  grid-gap: 10px;
+  padding: 20px 10px;
+}
+
+#b-printer .printer-container .grid-container div {
+  text-align: center;
+  font-size: 30px;
+  height: 100%;
+}
+
+#b-printer .printer-container .grid-container .btn-container {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+  line-height: 10vh;
+}
+
+#b-printer .printer-container .grid-container .btn-container a {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 3vh;
+  background-color: #4F5CCF;
+  font-weight: 900;
+  outline: 3px solid #4F5CCF;
+  outline-offset: -3px;
+}
+
+#b-printer .printer-container .grid-container .btn-container a:hover {
+  background-color: #fff;
+  color: #4F5CCF;
+}
+
+#b-printer .printer-container .grid-container .table-container {
+  -ms-grid-row: 2;
+  grid-area: 2 / span 3;
+}
+
+#b-printer .printer-container .grid-container .table-container .tbl {
+  min-width: 100%;
+  max-height: 87%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+#b-printer .printer-container .grid-container .table-container .tbl thead {
+  border-radius: 20px 20px 0 0;
+}
+
+#b-printer .printer-container .grid-container .table-container .tbl thead tr {
+  height: 100%;
+  width: 100%;
+  background-color: #4f5ccf;
+}
+
+#b-printer .printer-container .grid-container .table-container .tbl thead tr th {
+  color: #fff;
+  padding: 1vh 0;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+#b-printer .printer-container .grid-container .table-container .tbl thead tr .th1 {
+  width: 15%;
+}
+
+#b-printer .printer-container .grid-container .table-container .tbl thead tr .th2 {
+  width: 15%;
+}
+
+#b-printer .printer-container .grid-container .table-container .tbl thead tr .th3 {
+  width: 25%;
+}
+
+#b-printer .printer-container .grid-container .table-container .tbl thead tr .th4 {
+  width: 15%;
+}
+
+#b-printer .printer-container .grid-container .table-container .tbl tbody tr:nth-child(even) {
+  background-color: #f3f3f3;
+}
+
+#b-printer .printer-container .grid-container .table-container .tbl tbody tr td {
+  text-align: center;
+  padding: 1% 0;
+  border-bottom: 1px solid #dddddd;
+  font-size: 18px;
+}
+
+#b-cons {
+  padding: 0;
+  margin: 0;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+#b-cons .cons-container {
+  height: 100vh;
+  width: 92.8vw;
+  position: absolute;
+  right: 10px;
+}
+
+#b-cons .cons-container .grid-container {
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  height: 100vh;
+  -ms-grid-columns: 20% auto 20% 20%;
+      grid-template-columns: 20% auto 20% 20%;
+  -ms-grid-rows: 10vh auto;
+      grid-template-rows: 10vh auto;
+  grid-gap: 10px;
+  padding: 15px 10px;
+}
+
+#b-cons .cons-container .grid-container div {
+  text-align: center;
+  height: 100%;
+}
+
+#b-cons .cons-container .grid-container .btn1-container {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 3;
+  grid-area: 1 / 3 / span 1;
+  line-height: 10vh;
+}
+
+#b-cons .cons-container .grid-container .btn1-container a {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 3vh;
+  background-color: #4F5CCF;
+  font-weight: 900;
+  outline: 3px solid #4F5CCF;
+  outline-offset: -3px;
+  font-size: 30px;
+}
+
+#b-cons .cons-container .grid-container .btn1-container a:hover {
+  background-color: #fff;
+  color: #4F5CCF;
+}
+
+#b-cons .cons-container .grid-container .date-filter {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  grid-area: 1 / 1 / span 1;
+  line-height: 10vh;
+  text-align: left;
+}
+
+#b-cons .cons-container .grid-container .date-filter .table-control {
+  line-height: 5vh;
+  width: 100%;
+  background-color: #4F5CCF;
+  color: #fff;
+  border: none;
+  outline: none;
+  padding: 3px 10px;
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+#b-cons .cons-container .grid-container .date-filter .table-control::-webkit-calendar-picker-indicator {
+  background-color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#b-cons .cons-container .grid-container .btn2-container {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 4;
+  grid-area: 1 / 4 / span 1;
+  line-height: 10vh;
+}
+
+#b-cons .cons-container .grid-container .btn2-container a {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 3vh;
+  background-color: #4F5CCF;
+  font-weight: 900;
+  outline: 3px solid #4F5CCF;
+  outline-offset: -3px;
+  font-size: 30px;
+}
+
+#b-cons .cons-container .grid-container .btn2-container a:hover {
+  background-color: #fff;
+  color: #4F5CCF;
+}
+
+#b-cons .cons-container .grid-container .table-container {
+  -ms-grid-row: 2;
+  grid-area: 2 / span 4;
+}
+
+#b-cons .cons-container .grid-container .table-container .tbl {
+  min-width: 100%;
+  max-height: 87%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  overflow-y: scroll;
+}
+
+#b-cons .cons-container .grid-container .table-container .tbl thead {
+  border-radius: 20px 20px 0 0;
+  position: -webkit-sticky;
+  position: sticky;
+}
+
+#b-cons .cons-container .grid-container .table-container .tbl thead tr {
+  height: 100%;
+  width: 100%;
+  background-color: #4f5ccf;
+}
+
+#b-cons .cons-container .grid-container .table-container .tbl thead tr th {
+  color: #fff;
+  padding: 1vh 0;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+#b-cons .cons-container .grid-container .table-container .tbl thead tr .th1 {
+  width: 5%;
+}
+
+#b-cons .cons-container .grid-container .table-container .tbl thead tr .th2 {
+  width: 13%;
+}
+
+#b-cons .cons-container .grid-container .table-container .tbl thead tr .th3 {
+  width: 11%;
+}
+
+#b-cons .cons-container .grid-container .table-container .tbl thead tr .th4 {
+  width: 14%;
+}
+
+#b-cons .cons-container .grid-container .table-container .tbl thead tr .th5 {
+  width: auto;
+}
+
+#b-cons .cons-container .grid-container .table-container .tbl thead tr .th6 {
+  width: 18%;
+}
+
+#b-cons .cons-container .grid-container .table-container .tbl thead tr .th7 {
+  width: 10%;
+}
+
+#b-cons .cons-container .grid-container .table-container .tbl tbody tr:nth-child(even) {
+  background-color: #f3f3f3;
+}
+
+#b-cons .cons-container .grid-container .table-container .tbl tbody tr td {
+  text-align: center;
+  padding: 1% 0;
+  border-bottom: 1px solid #dddddd;
+  font-size: 18px;
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,8 +1,10 @@
 *{
     padding: 0;
     margin: 0;
-    font-family: Quicksand;
+    font-family: 'Roboto Mono', monospace;
 }
 
 @import './nav';
 @import './dashboard';
+@import './printer';
+@import './cons';

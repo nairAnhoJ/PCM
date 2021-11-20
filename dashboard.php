@@ -8,7 +8,7 @@
     <script src="./jquery/jquery-3.6.0.js"></script>
     <title>Dashboard</title>
 </head>
-<body onload="navsel()">
+<body id="b-dash" onload="navsel()">
     
     <!-- ========================= Side Bar ========================= -->
     

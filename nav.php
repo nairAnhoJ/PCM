@@ -25,7 +25,7 @@
         </li>
 
         <li id="act">
-            <a href="#">
+            <a href="consumables.php">
                 <img src="./obj/nav-bar/toner.png">
                 <span class="menu-name">Consumables</span>
             </a>

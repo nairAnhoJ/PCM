@@ -78,6 +78,132 @@
                         <td>Administration / Accounting</td>
                         <td>108916</td>
                     </tr>
+                    <tr>
+                        <td>Fujifilm</td>
+                        <td>AP C3070</td>
+                        <td>Purchasing</td>
+                        <td>508939</td>
+                    </tr>
+                    <tr>
+                        <td>Fujifilm</td>
+                        <td>DC-VII C2273</td>
+                        <td>Administration / Accounting</td>
+                        <td>108916</td>
+                    </tr>
+                    <tr>
+                        <td>Fujifilm</td>
+                        <td>DC-VII C2273</td>
+                        <td>Administration / Accounting</td>
+                        <td>108916</td>
+                    </tr>
+                    <tr>
+                        <td>Fujifilm</td>
+                        <td>DC-VII C2273</td>
+                        <td>Administration / Accounting</td>
+                        <td>108916</td>
+                    </tr>
+                    <tr>
+                        <td>Fujifilm</td>
+                        <td>DC-VII C2273</td>
+                        <td>Administration / Accounting</td>
+                        <td>108916</td>
+                    </tr>
+                    <tr>
+                        <td>Fujifilm</td>
+                        <td>DC-VII C2273</td>
+                        <td>Administration / Accounting</td>
+                        <td>108916</td>
+                    </tr>
+                    <tr>
+                        <td>Fujifilm</td>
+                        <td>DC-VII C2273</td>
+                        <td>Administration / Accounting</td>
+                        <td>108916</td>
+                    </tr>
+                    <tr>
+                        <td>Fujifilm</td>
+                        <td>DC-VII C2273</td>
+                        <td>Administration / Accounting</td>
+                        <td>108916</td>
+                    </tr>
+                    <tr>
+                        <td>Fujifilm</td>
+                        <td>DC-VII C2273</td>
+                        <td>Administration / Accounting</td>
+                        <td>108916</td>
+                    </tr>
+                    <tr>
+                        <td>Fujifilm</td>
+                        <td>DC-VII C2273</td>
+                        <td>Administration / Accounting</td>
+                        <td>108916</td>
+                    </tr>
+                    <tr>
+                        <td>Fujifilm</td>
+                        <td>DC-VII C2273</td>
+                        <td>Administration / Accounting</td>
+                        <td>108916</td>
+                    </tr>
+                    <tr>
+                        <td>Fujifilm</td>
+                        <td>DC-VII C2273</td>
+                        <td>Administration / Accounting</td>
+                        <td>108916</td>
+                    </tr>
+                    <tr>
+                        <td>Fujifilm</td>
+                        <td>DC-VII C2273</td>
+                        <td>Administration / Accounting</td>
+                        <td>108916</td>
+                    </tr>
+                    <tr>
+                        <td>Fujifilm</td>
+                        <td>DC-VII C2273</td>
+                        <td>Administration / Accounting</td>
+                        <td>108916</td>
+                    </tr>
+                    <tr>
+                        <td>Fujifilm</td>
+                        <td>DC-VII C2273</td>
+                        <td>Administration / Accounting</td>
+                        <td>108916</td>
+                    </tr>
+                    <tr>
+                        <td>Fujifilm</td>
+                        <td>DC-VII C2273</td>
+                        <td>Administration / Accounting</td>
+                        <td>108916</td>
+                    </tr>
+                    <tr>
+                        <td>Fujifilm</td>
+                        <td>DC-VII C2273</td>
+                        <td>Administration / Accounting</td>
+                        <td>108916</td>
+                    </tr>
+                    <tr>
+                        <td>Fujifilm</td>
+                        <td>DC-VII C2273</td>
+                        <td>Administration / Accounting</td>
+                        <td>108916</td>
+                    </tr>
+                    <tr>
+                        <td>Fujifilm</td>
+                        <td>DC-VII C2273</td>
+                        <td>Administration / Accounting</td>
+                        <td>108916</td>
+                    </tr>
+                    <tr>
+                        <td>Fujifilm</td>
+                        <td>DC-VII C2273</td>
+                        <td>Administration / Accounting</td>
+                        <td>108916</td>
+                    </tr>
+                    <tr>
+                        <td>Fujifilm</td>
+                        <td>DC-VII C2273</td>
+                        <td>Administration / Accounting</td>
+                        <td>108916</td>
+                    </tr>
                 </tbody>
         </table>
 

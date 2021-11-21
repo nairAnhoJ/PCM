@@ -14,9 +14,11 @@
     
     <?php include 'nav.php' ?>
 
+    <h1>Printer Consumables</h1>
+
     <!-- ========================= Table ========================= -->
+    
     <div class="tbl-container">
-        <h1>Printer Consumables</h1>
         <table class="tbl">
             <thead>
                 <tr>
@@ -38,6 +40,258 @@
                     <td>6</td>
                     <td>2</td>
                     <td>2</td>
+                </tr>
+                <tr>
+                    <td>Fujifilm</td>
+                    <td>AP C3070</td>
+                    <td>Purchasing</td>
+                    <td>508939</td>
+                    <td>3</td>
+                    <td>2</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>Fujifilm</td>
+                    <td>AP C3070</td>
+                    <td>Purchasing</td>
+                    <td>508939</td>
+                    <td>3</td>
+                    <td>2</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>Fujifilm</td>
+                    <td>AP C3070</td>
+                    <td>Purchasing</td>
+                    <td>508939</td>
+                    <td>3</td>
+                    <td>2</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>Fujifilm</td>
+                    <td>AP C3070</td>
+                    <td>Purchasing</td>
+                    <td>508939</td>
+                    <td>3</td>
+                    <td>2</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>Fujifilm</td>
+                    <td>AP C3070</td>
+                    <td>Purchasing</td>
+                    <td>508939</td>
+                    <td>3</td>
+                    <td>2</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>Fujifilm</td>
+                    <td>AP C3070</td>
+                    <td>Purchasing</td>
+                    <td>508939</td>
+                    <td>3</td>
+                    <td>2</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>Fujifilm</td>
+                    <td>AP C3070</td>
+                    <td>Purchasing</td>
+                    <td>508939</td>
+                    <td>3</td>
+                    <td>2</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>Fujifilm</td>
+                    <td>AP C3070</td>
+                    <td>Purchasing</td>
+                    <td>508939</td>
+                    <td>3</td>
+                    <td>2</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>Fujifilm</td>
+                    <td>AP C3070</td>
+                    <td>Purchasing</td>
+                    <td>508939</td>
+                    <td>3</td>
+                    <td>2</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>Fujifilm</td>
+                    <td>AP C3070</td>
+                    <td>Purchasing</td>
+                    <td>508939</td>
+                    <td>3</td>
+                    <td>2</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>Fujifilm</td>
+                    <td>AP C3070</td>
+                    <td>Purchasing</td>
+                    <td>508939</td>
+                    <td>3</td>
+                    <td>2</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>Fujifilm</td>
+                    <td>AP C3070</td>
+                    <td>Purchasing</td>
+                    <td>508939</td>
+                    <td>3</td>
+                    <td>2</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>Fujifilm</td>
+                    <td>AP C3070</td>
+                    <td>Purchasing</td>
+                    <td>508939</td>
+                    <td>3</td>
+                    <td>2</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>Fujifilm</td>
+                    <td>AP C3070</td>
+                    <td>Purchasing</td>
+                    <td>508939</td>
+                    <td>3</td>
+                    <td>2</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>Fujifilm</td>
+                    <td>AP C3070</td>
+                    <td>Purchasing</td>
+                    <td>508939</td>
+                    <td>3</td>
+                    <td>2</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>Fujifilm</td>
+                    <td>AP C3070</td>
+                    <td>Purchasing</td>
+                    <td>508939</td>
+                    <td>3</td>
+                    <td>2</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>Fujifilm</td>
+                    <td>AP C3070</td>
+                    <td>Purchasing</td>
+                    <td>508939</td>
+                    <td>3</td>
+                    <td>2</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>Fujifilm</td>
+                    <td>AP C3070</td>
+                    <td>Purchasing</td>
+                    <td>508939</td>
+                    <td>3</td>
+                    <td>2</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>Fujifilm</td>
+                    <td>AP C3070</td>
+                    <td>Purchasing</td>
+                    <td>508939</td>
+                    <td>3</td>
+                    <td>2</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>Fujifilm</td>
+                    <td>AP C3070</td>
+                    <td>Purchasing</td>
+                    <td>508939</td>
+                    <td>3</td>
+                    <td>2</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>Fujifilm</td>
+                    <td>AP C3070</td>
+                    <td>Purchasing</td>
+                    <td>508939</td>
+                    <td>3</td>
+                    <td>2</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>Fujifilm</td>
+                    <td>AP C3070</td>
+                    <td>Purchasing</td>
+                    <td>508939</td>
+                    <td>3</td>
+                    <td>2</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>Fujifilm</td>
+                    <td>AP C3070</td>
+                    <td>Purchasing</td>
+                    <td>508939</td>
+                    <td>3</td>
+                    <td>2</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>Fujifilm</td>
+                    <td>AP C3070</td>
+                    <td>Purchasing</td>
+                    <td>508939</td>
+                    <td>3</td>
+                    <td>2</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>Fujifilm</td>
+                    <td>AP C3070</td>
+                    <td>Purchasing</td>
+                    <td>508939</td>
+                    <td>3</td>
+                    <td>2</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>Fujifilm</td>
+                    <td>AP C3070</td>
+                    <td>Purchasing</td>
+                    <td>508939</td>
+                    <td>3</td>
+                    <td>2</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>Fujifilm</td>
+                    <td>AP C3070</td>
+                    <td>Purchasing</td>
+                    <td>508939</td>
+                    <td>3</td>
+                    <td>2</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>Fujifilm</td>
+                    <td>AP C3070</td>
+                    <td>Purchasing</td>
+                    <td>508939</td>
+                    <td>3</td>
+                    <td>2</td>
+                    <td>1</td>
                 </tr>
                 <tr>
                     <td>Fujifilm</td>

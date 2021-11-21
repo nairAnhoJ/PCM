@@ -1,19 +1,17 @@
 #b-cons{
     padding: 0;
     margin: 0;
-    overflow-y: hidden;
-    overflow-x:hidden;
 
     .cons-container{
         height: 100vh;
-        width: 92.8vw;
+        width: 94vw;
         position: absolute;
-        right: 10px;
+        right: 0px;
 
         .grid-container{
             position: relative;
             display: grid;
-            height: 100vh;
+            height: 93.8vh;
             grid-template-columns: 20% auto 20% 20% ;
             grid-template-rows: 10vh auto;
             grid-gap: 10px;
@@ -66,13 +64,14 @@
                     outline: none;
                     padding: 3px 10px;
                     border-radius: 8px;
-                    font-size: 15px;
+                    font-size: 20px;
                     
                     &::-webkit-calendar-picker-indicator{
                         background-color: #fff;
                         padding: 5px;
                         border-radius: 5px;
                         cursor: pointer;
+                        color: #4f5ccf;
                     }
                 }
 
@@ -108,55 +107,61 @@
 
             .table-container{
                 grid-area: 2 / span 4;
+                overflow-y: scroll;
+                margin-top: 5px;
 
                 .tbl{
                     min-width: 100%;
                     max-height: 87%;
                     border-collapse: collapse;
-                    margin-top: 20px;
                     overflow-y: scroll;
         
                     thead{
                         border-radius: 20px 20px 0 0;
-                        position: sticky;
                         tr{
                             height: 100%;
                             width: 100%;
-                            background-color: #4f5ccf;
         
                             th{
                                 color: #fff;
                                 padding: 1vh 0;
-                                font-size: 25px;
+                                font-size: 18px;
                                 font-weight: 700;
+                                position: sticky;
+                                top: 0;
+                                background-color: #4f5ccf;
                             }
         
                             .th1{
                                 width: 5%;
                             }
                             .th2{
-                                width: 13%;
+                                width: 10%;
                             }
                             .th3{
-                                width: 11%;
+                                width: 10%;
                             }
                             .th4{
-                                width: 14%;
+                                width: 10%;
                             }
                             .th5{
-                                width: auto;
+                                width: 15%;
                             }
                             .th6{
-                                width: 18%;
+                                width: auto;
                             }
                             .th7{
-                                width: 10%;
+                                width: 17%;
+                            }
+                            .th8{
+                                width: 8%;
                             }
                         }
                     }
         
                     tbody{
-        
+                        
+
                         tr:nth-child(even){
                             background-color: #f3f3f3;
                         }
@@ -166,7 +171,7 @@
                                 text-align: center;
                                 padding: 1% 0;
                                 border-bottom: 1px solid #dddddd;
-                                font-size: 18px;
+                                font-size: 15px;
                             }
                         }
                     }

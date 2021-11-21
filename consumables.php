@@ -46,17 +46,19 @@
                     <tr>
                         <th class="th1">#</th>
                         <th class="th2">Date</th>
-                        <th class="th3">Brand</th>
-                        <th class="th4">Model</th>
-                        <th class="th5">Location</th>
-                        <th class="th6">Item Type</th>
-                        <th class="th7">Quantity</th>
+                        <th class="th3">In/Out</th>
+                        <th class="th4">Brand</th>
+                        <th class="th5">Model</th>
+                        <th class="th6">Location</th>
+                        <th class="th7">Item Type</th>
+                        <th class="th8">Quantity</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
                         <td>1</td>
                         <td>11/20/2021</td>
+                        <td>In</td>
                         <td>Fujifilm</td>
                         <td>DC-VII C2273</td>
                         <td>Administration / Accounting</td>
@@ -66,6 +68,7 @@
                     <tr>
                         <td>2</td>
                         <td>11/20/2021</td>
+                        <td>In</td>
                         <td>Ricoh</td>
                         <td>MP 3055</td>
                         <td>IMPEX</td>
@@ -75,6 +78,7 @@
                     <tr>
                         <td>3</td>
                         <td>11/20/2021</td>
+                        <td>In</td>
                         <td>Fujifilm</td>
                         <td>DC-VII C2273</td>
                         <td>Administration / Accounting</td>
@@ -84,6 +88,7 @@
                     <tr>
                         <td>3</td>
                         <td>11/20/2021</td>
+                        <td>Out</td>
                         <td>Fujifilm</td>
                         <td>DC-VII C2273</td>
                         <td>Administration / Accounting</td>
@@ -93,6 +98,7 @@
                     <tr>
                         <td>3</td>
                         <td>11/20/2021</td>
+                        <td>In</td>
                         <td>Fujifilm</td>
                         <td>DC-VII C2273</td>
                         <td>Administration / Accounting</td>
@@ -102,6 +108,7 @@
                     <tr>
                         <td>3</td>
                         <td>11/20/2021</td>
+                        <td>Out</td>
                         <td>Fujifilm</td>
                         <td>DC-VII C2273</td>
                         <td>Administration / Accounting</td>
@@ -111,6 +118,7 @@
                     <tr>
                         <td>3</td>
                         <td>11/20/2021</td>
+                        <td>Out</td>
                         <td>Fujifilm</td>
                         <td>DC-VII C2273</td>
                         <td>Administration / Accounting</td>
@@ -120,6 +128,7 @@
                     <tr>
                         <td>3</td>
                         <td>11/20/2021</td>
+                        <td>In</td>
                         <td>Fujifilm</td>
                         <td>DC-VII C2273</td>
                         <td>Administration / Accounting</td>
@@ -129,6 +138,7 @@
                     <tr>
                         <td>3</td>
                         <td>11/20/2021</td>
+                        <td>In</td>
                         <td>Fujifilm</td>
                         <td>DC-VII C2273</td>
                         <td>Administration / Accounting</td>
@@ -138,6 +148,7 @@
                     <tr>
                         <td>3</td>
                         <td>11/20/2021</td>
+                        <td>In</td>
                         <td>Fujifilm</td>
                         <td>DC-VII C2273</td>
                         <td>Administration / Accounting</td>
@@ -147,6 +158,7 @@
                     <tr>
                         <td>3</td>
                         <td>11/20/2021</td>
+                        <td>Out</td>
                         <td>Fujifilm</td>
                         <td>DC-VII C2273</td>
                         <td>Administration / Accounting</td>
@@ -156,6 +168,7 @@
                     <tr>
                         <td>3</td>
                         <td>11/20/2021</td>
+                        <td>Out</td>
                         <td>Fujifilm</td>
                         <td>DC-VII C2273</td>
                         <td>Administration / Accounting</td>
@@ -165,6 +178,7 @@
                     <tr>
                         <td>3</td>
                         <td>11/20/2021</td>
+                        <td>Out</td>
                         <td>Fujifilm</td>
                         <td>DC-VII C2273</td>
                         <td>Administration / Accounting</td>
@@ -174,6 +188,7 @@
                     <tr>
                         <td>3</td>
                         <td>11/20/2021</td>
+                        <td>In</td>
                         <td>Fujifilm</td>
                         <td>DC-VII C2273</td>
                         <td>Administration / Accounting</td>
@@ -183,6 +198,7 @@
                     <tr>
                         <td>3</td>
                         <td>11/20/2021</td>
+                        <td>Out</td>
                         <td>Fujifilm</td>
                         <td>DC-VII C2273</td>
                         <td>Administration / Accounting</td>
@@ -192,6 +208,7 @@
                     <tr>
                         <td>3</td>
                         <td>11/20/2021</td>
+                        <td>Out</td>
                         <td>Fujifilm</td>
                         <td>DC-VII C2273</td>
                         <td>Administration / Accounting</td>

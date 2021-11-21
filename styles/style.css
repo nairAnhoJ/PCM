@@ -23,15 +23,15 @@ body #nav-container {
 }
 
 body #nav-container:hover {
-  width: 250px;
+  width: 260px;
 }
 
 body #nav-container:hover .menu-container li a {
-  width: 230px;
+  width: 240px;
 }
 
 body #nav-container:hover .logout-container a {
-  width: 230px;
+  width: 240px;
 }
 
 body #nav-container .logo-container {
@@ -153,7 +153,7 @@ body #nav-container .logout-container a {
 }
 
 body #nav-container .logout-container a:hover {
-  width: 230px;
+  width: 240px;
   background-color: #fff;
 }
 
@@ -210,24 +210,28 @@ body #nav-container .logout-container a #log-out {
   z-index: -1;
 }
 
-#b-dash .tbl-container {
-  height: 100%;
-  width: 94.27%;
-  position: absolute;
-  right: 0;
-}
-
-#b-dash .tbl-container h1 {
+#b-dash h1 {
   text-align: center;
   padding: 1.5%;
   font-size: 5vh;
 }
 
+#b-dash .tbl-container {
+  height: 85%;
+  width: 94vw;
+  position: absolute;
+  right: 10px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  scrollbar-color: #4f5ccf #dddddd;
+}
+
 #b-dash .tbl-container .tbl {
   margin: 0 2%;
-  min-width: 96%;
+  min-width: 99%;
   max-height: 87%;
   border-collapse: collapse;
+  scrollbar-color: #4f5ccf #dddddd;
 }
 
 #b-dash .tbl-container .tbl thead {
@@ -243,8 +247,12 @@ body #nav-container .logout-container a #log-out {
 #b-dash .tbl-container .tbl thead tr th {
   color: #fff;
   padding: 1vh 0;
-  font-size: 2.5vh;
+  font-size: 18px;
   font-weight: 700;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: #4f5ccf;
 }
 
 #b-dash .tbl-container .tbl thead tr .th1 {
@@ -283,25 +291,31 @@ body #nav-container .logout-container a #log-out {
   text-align: center;
   padding: 1% 0;
   border-bottom: 1px solid #dddddd;
+  font-size: 15px;
+}
+
+html {
+  scrollbar-width: normal;
+  scrollbar-color: #4f5ccf #dddddd;
 }
 
 #b-printer {
   padding: 0;
   margin: 0;
-  overflow-y: scroll;
+  overflow-y: hidden;
   overflow-x: hidden;
 }
 
 #b-printer .printer-container {
   height: 100vh;
-  width: 92.8vw;
+  width: 94vw;
   position: absolute;
   right: 0px;
 }
 
 #b-printer .printer-container h1 {
   text-align: center;
-  padding: 1.5%;
+  padding: 15px;
   font-size: 5vh;
   width: 90vw;
 }
@@ -310,13 +324,13 @@ body #nav-container .logout-container a #log-out {
   position: relative;
   display: -ms-grid;
   display: grid;
-  height: auto;
+  height: 88.8vh;
   -ms-grid-columns: auto auto auto;
       grid-template-columns: auto auto auto;
   -ms-grid-rows: 10vh auto;
       grid-template-rows: 10vh auto;
   grid-gap: 10px;
-  padding: 20px 10px;
+  padding: 0px 10px;
 }
 
 #b-printer .printer-container .grid-container div {
@@ -356,13 +370,15 @@ body #nav-container .logout-container a #log-out {
 #b-printer .printer-container .grid-container .table-container {
   -ms-grid-row: 2;
   grid-area: 2 / span 3;
+  margin-top: 10px;
+  overflow-y: scroll;
 }
 
 #b-printer .printer-container .grid-container .table-container .tbl {
   min-width: 100%;
   max-height: 87%;
   border-collapse: collapse;
-  margin-top: 20px;
+  overflow-y: scroll;
 }
 
 #b-printer .printer-container .grid-container .table-container .tbl thead {
@@ -372,14 +388,17 @@ body #nav-container .logout-container a #log-out {
 #b-printer .printer-container .grid-container .table-container .tbl thead tr {
   height: 100%;
   width: 100%;
-  background-color: #4f5ccf;
 }
 
 #b-printer .printer-container .grid-container .table-container .tbl thead tr th {
   color: #fff;
   padding: 1vh 0;
-  font-size: 25px;
+  font-size: 18px;
   font-weight: 700;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: #4f5ccf;
 }
 
 #b-printer .printer-container .grid-container .table-container .tbl thead tr .th1 {
@@ -406,28 +425,26 @@ body #nav-container .logout-container a #log-out {
   text-align: center;
   padding: 1% 0;
   border-bottom: 1px solid #dddddd;
-  font-size: 18px;
+  font-size: 15px;
 }
 
 #b-cons {
   padding: 0;
   margin: 0;
-  overflow-y: hidden;
-  overflow-x: hidden;
 }
 
 #b-cons .cons-container {
   height: 100vh;
-  width: 92.8vw;
+  width: 94vw;
   position: absolute;
-  right: 10px;
+  right: 0px;
 }
 
 #b-cons .cons-container .grid-container {
   position: relative;
   display: -ms-grid;
   display: grid;
-  height: 100vh;
+  height: 93.8vh;
   -ms-grid-columns: 20% auto 20% 20%;
       grid-template-columns: 20% auto 20% 20%;
   -ms-grid-rows: 10vh auto;
@@ -488,7 +505,7 @@ body #nav-container .logout-container a #log-out {
   outline: none;
   padding: 3px 10px;
   border-radius: 8px;
-  font-size: 15px;
+  font-size: 20px;
 }
 
 #b-cons .cons-container .grid-container .date-filter .table-control::-webkit-calendar-picker-indicator {
@@ -496,6 +513,7 @@ body #nav-container .logout-container a #log-out {
   padding: 5px;
   border-radius: 5px;
   cursor: pointer;
+  color: #4f5ccf;
 }
 
 #b-cons .cons-container .grid-container .btn2-container {
@@ -530,33 +548,35 @@ body #nav-container .logout-container a #log-out {
 #b-cons .cons-container .grid-container .table-container {
   -ms-grid-row: 2;
   grid-area: 2 / span 4;
+  overflow-y: scroll;
+  margin-top: 5px;
 }
 
 #b-cons .cons-container .grid-container .table-container .tbl {
   min-width: 100%;
   max-height: 87%;
   border-collapse: collapse;
-  margin-top: 20px;
   overflow-y: scroll;
 }
 
 #b-cons .cons-container .grid-container .table-container .tbl thead {
   border-radius: 20px 20px 0 0;
-  position: -webkit-sticky;
-  position: sticky;
 }
 
 #b-cons .cons-container .grid-container .table-container .tbl thead tr {
   height: 100%;
   width: 100%;
-  background-color: #4f5ccf;
 }
 
 #b-cons .cons-container .grid-container .table-container .tbl thead tr th {
   color: #fff;
   padding: 1vh 0;
-  font-size: 25px;
+  font-size: 18px;
   font-weight: 700;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: #4f5ccf;
 }
 
 #b-cons .cons-container .grid-container .table-container .tbl thead tr .th1 {
@@ -564,27 +584,31 @@ body #nav-container .logout-container a #log-out {
 }
 
 #b-cons .cons-container .grid-container .table-container .tbl thead tr .th2 {
-  width: 13%;
+  width: 10%;
 }
 
 #b-cons .cons-container .grid-container .table-container .tbl thead tr .th3 {
-  width: 11%;
+  width: 10%;
 }
 
 #b-cons .cons-container .grid-container .table-container .tbl thead tr .th4 {
-  width: 14%;
+  width: 10%;
 }
 
 #b-cons .cons-container .grid-container .table-container .tbl thead tr .th5 {
-  width: auto;
+  width: 15%;
 }
 
 #b-cons .cons-container .grid-container .table-container .tbl thead tr .th6 {
-  width: 18%;
+  width: auto;
 }
 
 #b-cons .cons-container .grid-container .table-container .tbl thead tr .th7 {
-  width: 10%;
+  width: 17%;
+}
+
+#b-cons .cons-container .grid-container .table-container .tbl thead tr .th8 {
+  width: 8%;
 }
 
 #b-cons .cons-container .grid-container .table-container .tbl tbody tr:nth-child(even) {
@@ -595,6 +619,6 @@ body #nav-container .logout-container a #log-out {
   text-align: center;
   padding: 1% 0;
   border-bottom: 1px solid #dddddd;
-  font-size: 18px;
+  font-size: 15px;
 }
 /*# sourceMappingURL=style.css.map */

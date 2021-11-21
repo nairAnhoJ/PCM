@@ -1,23 +1,28 @@
 #b-dash{
     z-index: -1;
 
-    .tbl-container{
-        height: 100%;
-        width: 94.27%;
-        position: absolute;
-        right: 0;
+    h1{
+        text-align: center;
+        padding: 1.5%;
+        font-size: 5vh;
+    }
 
-        h1{
-            text-align: center;
-            padding: 1.5%;
-            font-size: 5vh;
-        }
+    .tbl-container{
+        height: 85%;
+        width: 94vw;
+        position: absolute;
+        right: 10px;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        
+        scrollbar-color: #4f5ccf #dddddd;
 
         .tbl{
             margin: 0 2%;
-            min-width: 96%;
+            min-width: 99%;
             max-height: 87%;
             border-collapse: collapse;
+            scrollbar-color: #4f5ccf #dddddd;
 
             thead{
                 border-radius: 20px 20px 0 0;
@@ -29,8 +34,11 @@
                     th{
                         color: #fff;
                         padding: 1vh 0;
-                        font-size: 2.5vh;
+                        font-size: 18px;
                         font-weight: 700;
+                        position: sticky;
+                        top: 0;
+                        background-color: #4f5ccf;
                     }
 
                     .th1{
@@ -75,9 +83,15 @@
                         text-align: center;
                         padding: 1% 0;
                         border-bottom: 1px solid #dddddd;
+                        font-size: 15px;
                     }
                 }
             }
         }
     }
+}
+
+html{
+    scrollbar-width: normal;
+    scrollbar-color: #4f5ccf #dddddd;
 }

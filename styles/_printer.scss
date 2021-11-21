@@ -1,18 +1,18 @@
 #b-printer{
     padding: 0;
     margin: 0;
-    overflow-y: scroll;
+    overflow-y: hidden;
     overflow-x:hidden;
 
     .printer-container{
         height: 100vh;
-        width: 92.8vw;
+        width: 94vw;
         position: absolute;
         right: 0px;
 
         h1{
             text-align: center;
-            padding: 1.5%;
+            padding: 15px;
             font-size: 5vh;
             width: 90vw;
         }
@@ -20,11 +20,11 @@
         .grid-container{
             position: relative;
             display: grid;
-            height: auto;
+            height: 88.8vh;
             grid-template-columns: auto auto auto;
             grid-template-rows: 10vh auto;
             grid-gap: 10px;
-            padding: 20px 10px;
+            padding: 0px 10px;
 
             div{
                 text-align: center;
@@ -60,25 +60,29 @@
 
             .table-container{
                 grid-area: 2 / span 3;
+                margin-top: 10px;
+                overflow-y: scroll;
 
                 .tbl{
                     min-width: 100%;
                     max-height: 87%;
                     border-collapse: collapse;
-                    margin-top: 20px;
+                    overflow-y: scroll;
         
                     thead{
                         border-radius: 20px 20px 0 0;
                         tr{
                             height: 100%;
                             width: 100%;
-                            background-color: #4f5ccf;
         
                             th{
                                 color: #fff;
                                 padding: 1vh 0;
-                                font-size: 25px;
+                                font-size: 18px;
                                 font-weight: 700;
+                                position: sticky;
+                                top: 0;
+                                background-color: #4f5ccf;
                             }
         
                             .th1{
@@ -109,7 +113,7 @@
                                 text-align: center;
                                 padding: 1% 0;
                                 border-bottom: 1px solid #dddddd;
-                                font-size: 18px;
+                                font-size: 15px;
                             }
                         }
                     }

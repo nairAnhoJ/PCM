@@ -14,19 +14,19 @@ body{
         transition: width 0.5s;
 
         &:hover{
-            width: 250px;
+            width: 260px;
 
             .menu-container{
                 li{
                     a{
-                        width: 230px;
+                        width: 240px;
                     }
                 }
             }
 
             .logout-container{
                 a{
-                    width:230px;
+                    width:240px;
                 }
             }
         }
@@ -138,7 +138,7 @@ body{
                 text-decoration: none;
 
                 &:hover{
-                    width: 230px;
+                    width: 240px;
                     background-color: #fff;
 
                     #log-out{

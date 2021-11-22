@@ -48,12 +48,11 @@
                     border-radius: 3vh;
                     background-color: #4F5CCF;
                     font-weight: 900;
-                    outline: 3px solid #4F5CCF;
-                    outline-offset: -3px;
 
                     &:hover{
                         background-color: #fff;
                         color: #4F5CCF;
+                        box-shadow: 0 0 3pt 2pt #4F5CCF;
                     }
                 }
             }

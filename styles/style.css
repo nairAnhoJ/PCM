@@ -358,13 +358,13 @@ html {
   border-radius: 3vh;
   background-color: #4F5CCF;
   font-weight: 900;
-  outline: 3px solid #4F5CCF;
-  outline-offset: -3px;
 }
 
 #b-printer .printer-container .grid-container .btn-container a:hover {
   background-color: #fff;
   color: #4F5CCF;
+  -webkit-box-shadow: 0 0 3pt 2pt #4F5CCF;
+          box-shadow: 0 0 3pt 2pt #4F5CCF;
 }
 
 #b-printer .printer-container .grid-container .table-container {
@@ -477,14 +477,14 @@ html {
   border-radius: 3vh;
   background-color: #4F5CCF;
   font-weight: 900;
-  outline: 3px solid #4F5CCF;
-  outline-offset: -3px;
   font-size: 30px;
 }
 
 #b-cons .cons-container .grid-container .btn1-container a:hover {
   background-color: #fff;
   color: #4F5CCF;
+  -webkit-box-shadow: 0 0 3pt 2pt #4F5CCF;
+          box-shadow: 0 0 3pt 2pt #4F5CCF;
 }
 
 #b-cons .cons-container .grid-container .date-filter {
@@ -516,6 +516,15 @@ html {
   color: #4f5ccf;
 }
 
+#b-cons .cons-container .grid-container .date-filter .table-control::-webkit-clear-button {
+  display: none;
+}
+
+#b-cons .cons-container .grid-container .date-filter .table-control::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  display: none;
+}
+
 #b-cons .cons-container .grid-container .btn2-container {
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
@@ -535,14 +544,14 @@ html {
   border-radius: 3vh;
   background-color: #4F5CCF;
   font-weight: 900;
-  outline: 3px solid #4F5CCF;
-  outline-offset: -3px;
   font-size: 30px;
 }
 
 #b-cons .cons-container .grid-container .btn2-container a:hover {
   background-color: #fff;
   color: #4F5CCF;
+  -webkit-box-shadow: 0 0 3pt 2pt #4F5CCF;
+          box-shadow: 0 0 3pt 2pt #4F5CCF;
 }
 
 #b-cons .cons-container .grid-container .table-container {

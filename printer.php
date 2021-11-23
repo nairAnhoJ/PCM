@@ -7,6 +7,13 @@
     <link rel="stylesheet" href="./styles/style.css?v=<?php echo time(); ?>">
     <script src="./jquery/jquery-3.6.0.js"></script>
     <title>Manage Printers</title>
+
+    <script type="text/javascript">
+        function navsel() {
+            document.getElementById('acp').className = 'active';
+        }
+    </script>
+
 </head>
 <body id="b-printer" onload="navsel()">
     
@@ -211,11 +218,7 @@
         </div>
     </div>
 
-    <script>
-        function navsel() {
-            document.getElementById('acp').className = 'active';
-        }
-    </script>
+    
 
 </body>
 </html>

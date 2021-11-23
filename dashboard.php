@@ -306,7 +306,7 @@
         </table>
     </div>
 
-    <script>
+    <script type="text/javascript">
         function navsel() {
             document.getElementById('acd').className = 'active';
         }

@@ -593,11 +593,11 @@ html {
 }
 
 #b-cons .cons-container .grid-container .table-container .tbl thead tr .th2 {
-  width: 10%;
+  width: 9%;
 }
 
 #b-cons .cons-container .grid-container .table-container .tbl thead tr .th3 {
-  width: 10%;
+  width: 8%;
 }
 
 #b-cons .cons-container .grid-container .table-container .tbl thead tr .th4 {
@@ -605,19 +605,23 @@ html {
 }
 
 #b-cons .cons-container .grid-container .table-container .tbl thead tr .th5 {
-  width: 15%;
+  width: 10%;
 }
 
 #b-cons .cons-container .grid-container .table-container .tbl thead tr .th6 {
-  width: auto;
+  width: 10%;
 }
 
 #b-cons .cons-container .grid-container .table-container .tbl thead tr .th7 {
-  width: 17%;
+  width: auto;
 }
 
 #b-cons .cons-container .grid-container .table-container .tbl thead tr .th8 {
-  width: 8%;
+  width: 12%;
+}
+
+#b-cons .cons-container .grid-container .table-container .tbl thead tr .th9 {
+  width: 10%;
 }
 
 #b-cons .cons-container .grid-container .table-container .tbl tbody tr:nth-child(even) {

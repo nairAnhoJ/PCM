@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/style.css?v=<?php echo time(); ?>">
     <script src="./jquery/jquery-3.6.0.js"></script>
-    <title>Printers</title>
+    <title>Manage Printers</title>
 </head>
 <body id="b-printer" onload="navsel()">
     

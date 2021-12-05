@@ -29,20 +29,42 @@
                 }
 
                 $('#code-list option').remove();
+                $('#type-list option').remove();
 
                 if(bval == "Fujifilm"){
-                    if(tval == "Toner Cartridge"){
 
-                        var newOption = document.createElement("option");
-                        newOption.appendChild(document.createTextNode("CT202384"));
-                        clist.appendChild(newOption);
-                        var newOption = document.createElement("option");
-                        newOption.appendChild(document.createTextNode("CT202634"));
-                        clist.appendChild(newOption);
-                        var newOption = document.createElement("option");
-                        newOption.appendChild(document.createTextNode("CT202508"));
-                        clist.appendChild(newOption);
-                    }
+                    var newOption = document.createElement("option");
+                    newOption.appendChild(document.createTextNode("- - -"));
+                    tlist.appendChild(newOption);
+                    var newOption = document.createElement("option");
+                    newOption.appendChild(document.createTextNode("Toner Cartridge"));
+                    tlist.appendChild(newOption);
+                    var newOption = document.createElement("option");
+                    newOption.appendChild(document.createTextNode("Drum Cartridge"));
+                    tlist.appendChild(newOption);
+                    var newOption = document.createElement("option");
+                    newOption.appendChild(document.createTextNode("Waste Container"));
+                    tlist.appendChild(newOption);
+
+                    var newOption = document.createElement("option");
+                    newOption.appendChild(document.createTextNode("- - -"));
+                    clist.appendChild(newOption);
+
+                }
+                
+                if(bval == "Ricoh"){
+
+                    var newOption = document.createElement("option");
+                    newOption.appendChild(document.createTextNode("- - -"));
+                    tlist.appendChild(newOption);
+                    var newOption = document.createElement("option");
+                    newOption.appendChild(document.createTextNode("Toner Cartridge"));
+                    tlist.appendChild(newOption);
+
+                    var newOption = document.createElement("option");
+                    newOption.appendChild(document.createTextNode("- - -"));
+                    clist.appendChild(newOption);
+
                 }
             }
 
@@ -70,16 +92,70 @@
                         newOption.appendChild(document.createTextNode("CT202384"));
                         clist.appendChild(newOption);
                         var newOption = document.createElement("option");
+                        newOption.appendChild(document.createTextNode("CT202508"));
+                        clist.appendChild(newOption);
+                        var newOption = document.createElement("option");
                         newOption.appendChild(document.createTextNode("CT202634"));
                         clist.appendChild(newOption);
                         var newOption = document.createElement("option");
-                        newOption.appendChild(document.createTextNode("CT202508"));
+                        newOption.appendChild(document.createTextNode("CT202635"));
                         clist.appendChild(newOption);
+                        var newOption = document.createElement("option");
+                        newOption.appendChild(document.createTextNode("CT202636"));
+                        clist.appendChild(newOption);
+                        var newOption = document.createElement("option");
+                        newOption.appendChild(document.createTextNode("CT202637"));
+                        clist.appendChild(newOption);
+
+                    }
+
+                    if(tval == "Drum Cartridge"){
+
+                        var newOption = document.createElement("option");
+                        newOption.appendChild(document.createTextNode("CT351105"));
+                        clist.appendChild(newOption);
+                        var newOption = document.createElement("option");
+                        newOption.appendChild(document.createTextNode("CT351089"));
+                        clist.appendChild(newOption);
+                        var newOption = document.createElement("option");
+                        newOption.appendChild(document.createTextNode("CT201734"));
+                        clist.appendChild(newOption);
+
+                    }
+
+                    if(tval == "Waste Container"){
+
+                        var newOption = document.createElement("option");
+                        newOption.appendChild(document.createTextNode("CWAA0901"));
+                        clist.appendChild(newOption);
+                        var newOption = document.createElement("option");
+                        newOption.appendChild(document.createTextNode("CWAA1024"));
+                        clist.appendChild(newOption);
+
+                    }
+                }
+
+                
+                if(bval == "Ricoh"){
+                    if(tval == "Toner Cartridge"){
+
+                        var newOption = document.createElement("option");
+                        newOption.appendChild(document.createTextNode("MP 3554S"));
+                        clist.appendChild(newOption);
+                        var newOption = document.createElement("option");
+                        newOption.appendChild(document.createTextNode("MP 6054S"));
+                        clist.appendChild(newOption);
+                        var newOption = document.createElement("option");
+                        newOption.appendChild(document.createTextNode("IM C2500"));
+                        clist.appendChild(newOption);
+
                     }
                 }
             }
         </script>
     </head>
+
+        <!-- ========================================================================================================================================================================= -->
 
     <body id="b-cons" onload="navsel()">
         
@@ -88,36 +164,55 @@
         <?php include 'nav.php' ?>
         
         <div class="cons-container">
+            
+                <!-- ==================== MODAL ==================== -->
+                
+                <div class="modal-bg">
+                    <div class="modal">
+
+                        <div class="close-modal">
+                            <a href="#">
+                                <img src="./obj/close.png">
+                            </a>
+                        </div>
+
+                        <div class="ddown">
+                            <p>Brand: 
+                                <select id="brand-list" onChange="brandChange()">
+                                    <option>- - -</option>
+                                    <option>Fujifilm</option>
+                                    <option>Ricoh</option>
+                                </select>
+                            </p>
+
+                            <p>Item Type: 
+                                <select id="type-list" onChange="typeChange()">
+                                    <option>- - -</option>
+                                </select>
+                            </p>
+
+                            <p>Item Code: 
+                                <select id="code-list" onChange="model()">
+                                    <option>- - -</option>
+                                </select>
+                            </p>
+                        </div>
+
+
+                        <div class="submit-modal">
+                            <a href="#">
+                                <span class="btn-submit">Submit</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ==================== MODAL END ==================== -->
+
             <div class = "grid-container">
 
                 <!-- ========================= Buttons ========================= -->
-                
-                <div class="modal-bg-in">
-                    <div class="modal">
-                        <p>Brand: 
-                            <select id="brand-list" onChange="brandChange()">
-                                <option>- - -</option>
-                                <option>Fujifilm</option>
-                                <option>Ricoh</option>
-                            </select>
-                        </p>
 
-                        <p>Item Type: 
-                            <select id="type-list" onChange="typeChange()">
-                                <option>- - -</option>
-                                <option>Toner Cartridge</option>
-                                <option>Drum Cartridge</option>
-                                <option>Waste Container</option>
-                            </select>
-                        </p>
-
-                        <p>Item Code: 
-                            <select id="code-list" onChange="model()">
-                                <option>- - -</option>
-                            </select>
-                        </p>
-                    </div>
-                </div>
 
 
                 <div class="date-filter">
@@ -176,7 +271,7 @@
                                 <td>Drum Cartridge</td>
                                 <td>MP 3554S</td>
                                 <td>---</td>
-                                <td>IMPEX</td>
+                                <td>---</td>
                                 <td>1</td>
                             </tr>
                             <tr>

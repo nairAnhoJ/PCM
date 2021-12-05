@@ -440,6 +440,89 @@ html {
   right: 0px;
 }
 
+#b-cons .cons-container .modal-bg {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 99;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#b-cons .cons-container .modal-bg .modal {
+  background-color: #fff;
+  border-radius: 5%;
+  width: 30%;
+  height: 50%;
+  position: relative;
+}
+
+#b-cons .cons-container .modal-bg .modal .close-modal {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+}
+
+#b-cons .cons-container .modal-bg .modal .close-modal a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+#b-cons .cons-container .modal-bg .modal .close-modal a img {
+  width: 50px;
+  height: 50px;
+}
+
+#b-cons .cons-container .modal-bg .modal .close-modal a img:hover {
+  width: 60px;
+  height: 60px;
+}
+
+#b-cons .cons-container .modal-bg .modal .ddown {
+  margin: 20% 10%;
+}
+
+#b-cons .cons-container .modal-bg .modal .ddown p {
+  margin-bottom: 25px;
+  font-size: 18px;
+}
+
+#b-cons .cons-container .modal-bg .modal .ddown p select {
+  text-align: center;
+  font-size: 18px;
+  width: 50%;
+}
+
+#b-cons .cons-container .modal-bg .modal .submit-modal {
+  text-decoration: none;
+  font-size: 25px;
+  width: 50px;
+  height: 50px;
+  background-color: aquamarine;
+}
+
 #b-cons .cons-container .grid-container {
   position: relative;
   display: -ms-grid;

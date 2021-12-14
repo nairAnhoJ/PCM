@@ -31,6 +31,9 @@
                 $('#code-list option').remove();
                 $('#type-list option').remove();
 
+                document.getElementById("btn-sub-in").disabled = true;
+                $('#btn-sub-in').css("background-color", "#808080");
+
                 if(bval == "Fujifilm"){
 
                     var newOption = document.createElement("option");
@@ -41,6 +44,9 @@
                     tlist.appendChild(newOption);
                     var newOption = document.createElement("option");
                     newOption.appendChild(document.createTextNode("Drum Cartridge"));
+                    tlist.appendChild(newOption);
+                    var newOption = document.createElement("option");
+                    newOption.appendChild(document.createTextNode("Cleaning Cartridge"));
                     tlist.appendChild(newOption);
                     var newOption = document.createElement("option");
                     newOption.appendChild(document.createTextNode("Waste Container"));
@@ -85,7 +91,12 @@
 
                 $('#code-list option').remove();
 
+                document.getElementById("btn-sub-in").disabled = false;
+                $('#btn-sub-in').css("background-color", "#4f5ccf");
+                $('#btn-sub-in:hover').css("background-color", "#ffffff");
+
                 if(bval == "Fujifilm"){
+
                     if(tval == "Toner Cartridge"){
 
                         var newOption = document.createElement("option");
@@ -123,6 +134,14 @@
 
                     }
 
+                    if(tval == "Cleaning Cartridge"){
+
+                        var newOption = document.createElement("option");
+                        newOption.appendChild(document.createTextNode("- - -"));
+                        clist.appendChild(newOption);
+
+                    }
+
                     if(tval == "Waste Container"){
 
                         var newOption = document.createElement("option");
@@ -152,6 +171,62 @@
                     }
                 }
             }
+
+            // ===================================== BUTTON FOR MODAL =============================================
+            
+            // ===== OPEN IN MODAL =====
+            $(document).on('click', '#open-btn-in', function(){
+                $(".modal-bg").css("visibility", "visible");
+            })
+
+
+            // ===== CLOSE IN MODAL =====
+            $(document).on('click', '#close-btn-in', function(){
+                var blist = document.getElementById("brand-list");
+                var tlist = document.getElementById("type-list");
+                var clist = document.getElementById("code-list");
+
+                $('#code-list option').remove();
+                $('#type-list option').remove();
+                $('#brand-list option').remove();
+
+                var newOption = document.createElement("option");
+                newOption.appendChild(document.createTextNode("- - -"));
+                tlist.appendChild(newOption);
+
+                var newOption = document.createElement("option");
+                newOption.appendChild(document.createTextNode("- - -"));
+                clist.appendChild(newOption);
+
+                var newOption = document.createElement("option");
+                newOption.appendChild(document.createTextNode("- - -"));
+                blist.appendChild(newOption);
+
+                var newOption = document.createElement("option");
+                newOption.appendChild(document.createTextNode("Fujifilm"));
+                blist.appendChild(newOption);
+
+                var newOption = document.createElement("option");
+                newOption.appendChild(document.createTextNode("Ricoh"));
+                blist.appendChild(newOption);
+
+
+
+                $(".modal-bg").css("visibility", "hidden");
+            })
+
+            // ===== QUANTITY NEGATIVE VALUE =====
+
+            function qChange(){
+                var qval = $('#in-quantity').val();
+
+                if (qval < 1){
+                    $('#in-quantity').val('1');
+                }else if (qval > 10){
+                    $('#in-quantity').val('10');
+                }
+            }
+
         </script>
     </head>
 
@@ -171,38 +246,52 @@
                     <div class="modal">
 
                         <div class="close-modal">
-                            <a href="#">
+                            <a id="close-btn-in" href="#">
                                 <img src="./obj/close.png">
                             </a>
                         </div>
 
+                        <div class="head"><p>IN</p></div>
+
                         <div class="ddown">
-                            <p>Brand: 
+                            <div class="l1"><p>Brand:</p></div>
+                            <div class="o">
                                 <select id="brand-list" onChange="brandChange()">
                                     <option>- - -</option>
                                     <option>Fujifilm</option>
                                     <option>Ricoh</option>
                                 </select>
-                            </p>
+                            </div>
 
-                            <p>Item Type: 
+                            <div class="l2"><p>Item Type:</p></div>
+                            <div class="o">
                                 <select id="type-list" onChange="typeChange()">
                                     <option>- - -</option>
                                 </select>
-                            </p>
+                            </div>
 
-                            <p>Item Code: 
+                            <div class="l3"><p>Item Code:</p></div>
+                            <div class="o">
                                 <select id="code-list" onChange="model()">
                                     <option>- - -</option>
                                 </select>
-                            </p>
+                            </div>
+
+                            <div class="l4"><p>Quantity:</p></div>
+                            <div class="o o4">
+                                <input type="number" id="in-quantity" min="1" max="10" onChange="qChange()" value="1">
+                            </div>
                         </div>
 
+                        <div class="msub">
+                            <div class="submit-modal">
+                                <button type="submit" class="btn-submit" id="btn-sub-in" disabled="disabled">Submit</button>
 
-                        <div class="submit-modal">
-                            <a href="#">
-                                <span class="btn-submit">Submit</span>
-                            </a>
+
+                                <!-- <a id="btn-sub-in" href="#">
+                                    <span class="btn-submit">Submit</span>
+                                </a> -->
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -222,7 +311,7 @@
                 </div>
 
                 <div class="btn1-container">
-                    <a href="#">
+                    <a id="open-btn-in" href="#">
                         <span class="printer-btn">IN</span>
                     </a>
                 </div>
@@ -278,7 +367,7 @@
                                 <td>3</td>
                                 <td>11/20/2021</td>
                                 <td>Out</td>
-                                <td>Fijifilm</td>
+                                <td>Viljam</td>
                                 <td>Waste Container</td>
                                 <td>CWAA0901</td>
                                 <td>AP C3070</td>
@@ -287,7 +376,6 @@
                             </tr>
                         </tbody>
                     </table>
-
                 </div>
             </div>
         </div>

@@ -1,7 +1,7 @@
 * {
   padding: 0;
   margin: 0;
-  font-family: 'Roboto Mono', monospace;
+  font-family: 'Bahnschrift';
 }
 
 body {
@@ -447,7 +447,6 @@ html {
   top: 0;
   left: 0;
   background-color: rgba(0, 0, 0, 0.5);
-  z-index: 99;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -457,20 +456,36 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  z-index: 99;
+  visibility: hidden;
 }
 
 #b-cons .cons-container .modal-bg .modal {
   background-color: #fff;
   border-radius: 5%;
-  width: 30%;
-  height: 50%;
+  width: 35%;
+  height: 59%;
   position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#b-cons .cons-container .modal-bg .modal .head {
+  margin-top: 5%;
+  height: 50px;
+  text-align: center;
+}
+
+#b-cons .cons-container .modal-bg .modal .head p {
+  color: #4f5ccf;
+  font-size: 40px;
 }
 
 #b-cons .cons-container .modal-bg .modal .close-modal {
   position: absolute;
-  right: 10px;
-  top: 10px;
+  right: 5px;
+  top: 5px;
   width: 60px;
   height: 60px;
   text-align: center;
@@ -496,31 +511,91 @@ html {
 }
 
 #b-cons .cons-container .modal-bg .modal .close-modal a img:hover {
-  width: 60px;
-  height: 60px;
+  width: 55px;
+  height: 55px;
 }
 
 #b-cons .cons-container .modal-bg .modal .ddown {
-  margin: 20% 10%;
+  margin: 3.5% 10% 5.5% 10%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 30% 70%;
+      grid-template-columns: 30% 70%;
+}
+
+#b-cons .cons-container .modal-bg .modal .ddown .l1, #b-cons .cons-container .modal-bg .modal .ddown .l2, #b-cons .cons-container .modal-bg .modal .ddown .l3, #b-cons .cons-container .modal-bg .modal .ddown .l4 {
+  line-height: 30px;
+}
+
+#b-cons .cons-container .modal-bg .modal .ddown .o {
+  width: 100%;
+}
+
+#b-cons .cons-container .modal-bg .modal .ddown .o select {
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+  height: 30px;
+}
+
+#b-cons .cons-container .modal-bg .modal .ddown .o input {
+  text-align: center;
+  font-size: 17px;
+  width: 98%;
+  height: 30px;
 }
 
 #b-cons .cons-container .modal-bg .modal .ddown p {
   margin-bottom: 25px;
-  font-size: 18px;
+  font-size: 20px;
 }
 
-#b-cons .cons-container .modal-bg .modal .ddown p select {
-  text-align: center;
-  font-size: 18px;
-  width: 50%;
+#b-cons .cons-container .modal-bg .modal .ddown .l4, #b-cons .cons-container .modal-bg .modal .ddown .o4 {
+  height: 24px;
 }
 
-#b-cons .cons-container .modal-bg .modal .submit-modal {
-  text-decoration: none;
+#b-cons .cons-container .modal-bg .modal .msub {
+  width: 100%;
+  height: 60px;
+}
+
+#b-cons .cons-container .modal-bg .modal .msub .submit-modal {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   font-size: 25px;
-  width: 50px;
-  height: 50px;
-  background-color: aquamarine;
+  width: 60%;
+  height: 60px;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 15px;
+}
+
+#b-cons .cons-container .modal-bg .modal .msub .submit-modal .btn-submit {
+  width: 100%;
+  height: 100%;
+  background-color: #808080;
+  border: none;
+  color: #fff;
+  font-size: 25px;
+}
+
+#b-cons .cons-container .modal-bg .modal .msub .submit-modal .btn-submit:hover:enabled {
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 3pt 2pt #4F5CCF;
+          box-shadow: 0 0 3pt 2pt #4F5CCF;
+  color: #4F5CCF;
+}
+
+#b-cons .cons-container .modal-bg .modal .msub .submit-modal a {
+  display: block;
+  text-decoration: none;
+  line-height: 60px;
+  width: 100%;
+  height: 100%;
+  color: #fff;
 }
 
 #b-cons .cons-container .grid-container {

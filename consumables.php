@@ -66,12 +66,7 @@
 
                         <div class="msub">
                             <div class="submit-modal">
-                                <button type="submit" class="btn-submit" id="btn-sub-in" disabled="disabled">Submit</button>
-
-
-                                <!-- <a id="btn-sub-in" href="#">
-                                    <span class="btn-submit">Submit</span>
-                                </a> -->
+                                <button type="submit" class="btn-submit" id="btn-sub-in" disabled="disabled" onclick="subIn()">Submit</button>
                             </div>
                         </div>
                     </div>
@@ -136,7 +131,7 @@
 
                         <div class="msub">
                             <div class="submit-modal">
-                                <button type="submit" class="btn-submit" id="btn-sub-out" disabled="disabled">Submit</button>
+                                <button type="submit" class="btn-submit" id="btn-sub-out" disabled="disabled" onclick="subOut()">Submit</button>
                             </div>
                         </div>
                     </div>
@@ -151,9 +146,7 @@
 
 
                 <div class="date-filter">
-                    <a href="#">
-                        <input type="date" id="picker" class="table-control">
-                    </a>
+                    <input type="date" id="date-picker" class="table-control">
                 </div>
 
                 <div class="btn1-container">

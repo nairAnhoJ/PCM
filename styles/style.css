@@ -581,6 +581,9 @@ html {
   color: #fff;
   font-size: 25px;
   border-radius: 15px;
+}
+
+#b-cons .cons-container .modal-bg .modal .msub .submit-modal .btn-submit:enabled, #b-cons .cons-container .modal-bg-out .modal .msub .submit-modal .btn-submit:enabled {
   cursor: pointer;
 }
 

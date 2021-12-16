@@ -1,5 +1,21 @@
 function navsel() {
     document.getElementById('act').className = 'active';
+
+    // ===== SET INPUT[DATE] = TODAY =====
+    var tdy = new Date();
+    var dd = tdy.getDate();
+    var mm = tdy.getMonth()+1;
+    var yyyy = tdy.getFullYear();
+    if(dd<10){
+        dd='0'+dd
+    }
+    if(mm<10){
+        mm='0'+mm
+    }
+    tdy = yyyy+'-'+mm+'-'+dd;
+    document.getElementById('date-picker').value = tdy;
+
+    
 }
 
 // ==================================================== IN ====================================================
@@ -20,9 +36,6 @@ function brandChange(){
 
     $('#code-list option').remove();
     $('#type-list option').remove();
-
-    document.getElementById("btn-sub-in").disabled = true;
-    $('#btn-sub-in').css("background-color", "#808080");
 
     if(bval == "Fujifilm"){
         var newOption = document.createElement("option");
@@ -58,6 +71,8 @@ function brandChange(){
         newOption.appendChild(document.createTextNode("- - -"));
         clist.appendChild(newOption);
     }
+
+    checkButtonIn();
 }
 
 // ===== ITEM TYPE CHANGE =====
@@ -76,10 +91,6 @@ function typeChange(){
     }
 
     $('#code-list option').remove();
-
-    document.getElementById("btn-sub-in").disabled = false;
-    $('#btn-sub-in').css("background-color", "#4f5ccf");
-    $('#btn-sub-in:hover').css("background-color", "#ffffff");
 
     if(bval == "Fujifilm"){
 
@@ -146,13 +157,16 @@ function typeChange(){
             clist.appendChild(newOption);
         }
     }
+    checkButtonIn();
 }
 
 // ===== OPEN IN MODAL =====
 $(document).on('click', '#open-btn-in', function(){
-    $(".modal-bg").css("visibility", "visible");
-})
 
+    $(".modal-bg").css("visibility", "visible");
+
+    checkButtonIn();
+})
 
 // ===== CLOSE IN MODAL =====
 $(document).on('click', '#close-btn-in', function(){
@@ -182,8 +196,25 @@ $(document).on('click', '#close-btn-in', function(){
     newOption.appendChild(document.createTextNode("Ricoh"));
     blist.appendChild(newOption);
 
+    checkButtonIn();
+
     $(".modal-bg").css("visibility", "hidden");
 })
+
+// ===== ENABLE / DISABLE SUBMIT BUTTON =====
+function checkButtonIn(){
+    var biloVal = $('#brand-list').val();
+    var tiloVal = $('#type-list').val();
+    var ciloVal = $('#code-list').val();
+
+    if((biloVal == "- - -") || (tiloVal == "- - -") || (ciloVal == "- - -")){
+        document.getElementById("btn-sub-in").disabled = true;
+        $('#btn-sub-in').css("background-color", "#808080");
+    }else{
+        document.getElementById("btn-sub-in").disabled = false;
+        $('#btn-sub-in').css("background-color", "#4f5ccf");
+    }
+}
 
 
 
@@ -428,3 +459,11 @@ function qChangeOut(){
         $('.quantity').val('10');
     }
 }
+
+// function subIn(){
+//     alert ("Submit - In");
+// }
+
+// function subOut(){
+//     alert ("Submit - Out");
+// }

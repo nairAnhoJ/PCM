@@ -15,7 +15,6 @@ function navsel() {
     tdy = yyyy+'-'+mm+'-'+dd;
     document.getElementById('date-picker').value = tdy;
 
-    
 }
 
 // ==================================================== IN ====================================================

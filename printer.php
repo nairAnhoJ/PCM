@@ -16,8 +16,52 @@
 
 </head>
 <body id="b-printer" onload="navsel()">
+
+
+    <!-- ========================= ADD BUTTON ========================= -->
+
+    <div class="printer-modal">
+        <div class="modal-bg">
+            <div class="close-modal">
+                <a id="close-btn-add" href="#">
+                    <img src="./obj/close.png">
+                </a>
+            </div>
+
+            <div class="head"><p>ADD PRINTER</p></div>
+
+            <div class="frm-add">
+                <div class="label l1"><p>Brand:</p></div>
+                <div class="inp">
+                    <input type="text" class="txt-input">
+                </div>
+
+                <div class="label l2"><p>Model:</p></div>
+                <div class="inp">
+                    <input type="text" class="txt-input">
+                </div>
+
+                <div class="label l3"><p>Serial No:</p></div>
+                <div class="inp">
+                    <input type="text" class="txt-input">
+                </div>
+
+                <div class="label l4"><p>Location:</p></div>
+                <div class="inp">
+                    <input type="text" class="txt-input">
+                </div>
+
+            </div>
+            
+            <div class="below-frm">
+                    <div class="add-cons">Consumables</div>
+                    <input id="btn-add" type="button">
+                <div id='con-data'></div>
+            </div>
+        </div>
+    </div>
     
-    <!-- ========================= Side Bar ========================= -->
+    <!-- ========================= SIDE BAR ========================= -->
 
     <?php include 'nav.php' ?>
     
@@ -30,27 +74,21 @@
             <!-- ========================= Buttons ========================= -->
             
             <div class="btn-container">
-
                 <a href="#">
                     <span class="printer-btn">ADD</span>
                 </a>
-
             </div>
             
             <div class="btn-container">
-
                 <a href="#">
                     <span class="printer-btn">EDIT</span>
                 </a>
-
             </div>
 
             <div class="btn-container">
-
                 <a href="#">
                     <span class="printer-btn">REMOVE</span>
                 </a>
-
             </div>
 
             <!-- ========================= Table ========================= -->

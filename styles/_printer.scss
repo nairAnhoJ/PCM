@@ -4,6 +4,110 @@
     overflow-y: hidden;
     overflow-x:hidden;
 
+    .printer-modal{
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: rgba(0,0,0,0.5);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 99;
+
+        .modal-bg{
+            background-color: #fff;
+            border-radius: 5%;
+            width: 35%;
+            min-height: 70%;
+            position: relative;
+            align-items: center;
+
+            .head{
+                margin-top: 5%;
+                height: 40px;
+                text-align: center;
+
+                p{
+                    color: #4f5ccf;
+                    font-size: 35px;
+                }
+
+
+            }
+            
+            .close-modal{
+                position: absolute;
+                right: 5px;
+                top: 5px;
+                width: 60px;
+                height: 60px;
+                text-align: center;
+
+                a{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 100%;
+                    height: 100%;
+
+                    img{
+                        width: 50px;
+                        height: 50px;
+
+                        &:hover{
+                            width: 55px;
+                            height: 55px;
+                        }
+                    }
+                }
+            }
+
+            .frm-add{
+                margin: 3.5% 10% 5.5% 10%;
+                display: grid;
+                grid-template-columns: 30% 70%;
+
+                .label{
+                    line-height: 36px;
+                }
+
+                .inp{
+                    width: 100%;
+                        input{
+                            text-align:center;
+                            font-size: 17px;
+                            width: 98%;
+                            height: 30px;
+                        }
+                }
+            }
+
+            .below-frm{
+                background-color: red;
+                min-height: 100px;
+
+                .add-cons{
+                    display: inline;
+                    float: left;
+                    font-size: 20px;
+                    background-color: #4f5ccf;
+                }
+
+                #btn-add{
+                    display: inline;
+                    float: left;
+                    width: 40px;
+                    height: 40px;
+                }
+            }
+        }
+    }
+
+
+
+
     .printer-container{
         height: 100vh;
         width: 94vw;
@@ -22,7 +126,7 @@
             display: grid;
             height: 88.8vh;
             grid-template-columns: auto auto auto;
-            grid-template-rows: 10vh auto;
+            grid-template-rows: 9.6vh auto;
             grid-gap: 10px;
             padding: 0px 10px;
 
